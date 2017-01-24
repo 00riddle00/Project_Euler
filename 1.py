@@ -1,4 +1,6 @@
 
+# algorithm complexity: O(n)
+# TODO
 
 debug = True
 
