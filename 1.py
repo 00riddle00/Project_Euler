@@ -1,8 +1,4 @@
-
 # algorithm complexity: O(n)
-# TODO
-
-debug = True
 
 def solution(maximum):
 
@@ -14,9 +10,5 @@ def solution(maximum):
 
     return sum(multiples)
 
-max_limit = 1000
-
-result = solution(max_limit)
-
-if debug:
-    print("result", result)
+result = solution(1000)
+print("result", result)

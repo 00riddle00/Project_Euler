@@ -1,13 +1,11 @@
-
-
 # algorithm complexity:
 
-def sum(current = None, max_val = None):
+def sum(prev = None, current = None, sum_current = 0, max_val = None):
 
     if not current:
         current = 1
         prev = current
-        sum_current = 0
+        # sum_current = 0
 
     if not current%2:
         sum_current += current
@@ -15,11 +13,9 @@ def sum(current = None, max_val = None):
     next = current + prev
 
     if next < max_val:
-        sum_current = sum(next)
+        sum_current = sum(current, next, sum_current, max_val)
 
     return sum_current
 
-max_val = 10
-
-suma = sum(max_val=max_val)
-print("s", suma)
+result = sum(max_val=4000000)
+print("result", result)
