@@ -1,4 +1,3 @@
-# algorithm complexity:
 
 def fibonacci_sum(prev = None, current = None, sum_current = 0, max_val = None):
 
